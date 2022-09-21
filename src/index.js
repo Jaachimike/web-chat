@@ -3,6 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import * as firebase from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAgyUNiRBUsmviEoqYxLurlJ2Hxxb2RQDE",
+  authDomain: "web-chat-38d20.firebaseapp.com",
+  projectId: "web-chat-38d20",
+  storageBucket: "web-chat-38d20.appspot.com",
+  messagingSenderId: "720710887256",
+  appId: "1:720710887256:web:6dcbff632f855be785a72d",
+  measurementId: "G-QKKG256YKW"
+};
+
+firebase.initializeApp(firebaseConfig);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
